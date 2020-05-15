@@ -1,11 +1,17 @@
 <template>
   <el-container class='footer-push'>
     <el-header>
-      <el-menu :default-active="activeIndex" class="el-menu-demo" text-color='#FFF' background-color="rgb(64, 158, 255)" mode="horizontal" @select="handleSelect">
-        <el-menu-item index="1">处理中心</el-menu-item>
+      <el-menu :default-active="activeIndex" 
+        class="el-menu-demo" text-color='#FFF' 
+        background-color="rgb(64, 158, 255)" mode="horizontal" @select="handleSelect">
+        <el-menu-item index="1">
+          <a href="/">首页</a>
+        </el-menu-item>
         <el-submenu index="2">
           <template slot="title">我的工作台</template>
-          <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-1">
+            <a href="/el-table">表格</a>
+          </el-menu-item>
           <el-menu-item index="2-2">选项2</el-menu-item>
           <el-menu-item index="2-3">选项3</el-menu-item>
           <el-submenu index="2-4">
@@ -80,8 +86,8 @@
     list-style-type: none;
     margin-right: 15px;
   }
-  .footer a {
-    color: #574c4f;
+
+  a {
     text-decoration: none;
   }
 </style>
