@@ -1,32 +1,61 @@
 <template>
-  <el-container class='footer-push'>
+  <el-container class="footer-push">
     <el-header>
-      <el-menu :default-active="activeIndex" 
-        class="el-menu-demo" text-color='#FFF' 
-        background-color="rgb(64, 158, 255)" mode="horizontal" @select="handleSelect">
+      <el-menu
+        :default-active="activeIndex" 
+        class="el-menu-demo"
+        text-color="#FFF" 
+        background-color="rgb(64, 158, 255)"
+        mode="horizontal"
+        @select="handleSelect"
+      >
         <el-menu-item index="1">
           <a href="/">首页</a>
         </el-menu-item>
         <el-submenu index="2">
-          <template slot="title">我的工作台</template>
+          <template slot="title">
+            我的工作台
+          </template>
           <el-menu-item index="2-1">
             <a href="/el-table">表格</a>
           </el-menu-item>
-          <el-menu-item index="2-2">选项2</el-menu-item>
-          <el-menu-item index="2-3">选项3</el-menu-item>
+          <el-menu-item index="2-2">
+            选项2
+          </el-menu-item>
+          <el-menu-item index="2-3">
+            选项3
+          </el-menu-item>
           <el-submenu index="2-4">
-            <template slot="title">选项4</template>
-            <el-menu-item index="2-4-1">选项1</el-menu-item>
-            <el-menu-item index="2-4-2">选项2</el-menu-item>
-            <el-menu-item index="2-4-3">选项3</el-menu-item>
+            <template slot="title">
+              选项4
+            </template>
+            <el-menu-item index="2-4-1">
+              选项1
+            </el-menu-item>
+            <el-menu-item index="2-4-2">
+              选项2
+            </el-menu-item>
+            <el-menu-item index="2-4-3">
+              选项3
+            </el-menu-item>
           </el-submenu>
         </el-submenu>
-        <el-menu-item index="3" disabled>消息中心</el-menu-item>
-        <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">订单管理</a></el-menu-item>
+        <el-menu-item
+          index="3"
+          disabled
+        >
+          消息中心
+        </el-menu-item>
+        <el-menu-item index="4">
+          <a
+            href="https://www.ele.me"
+            target="_blank"
+          >订单管理</a>
+        </el-menu-item>
       </el-menu>
     </el-header>
     <el-main>
-      <slot></slot>
+      <slot />
     </el-main>
     <el-footer>
       <div class="footer">
@@ -41,7 +70,7 @@
           </ul>
 
           <div class="footer-right">
-            <a href="https://github.com"><span class="octicon octicon-code"></span> with <span class="octicon octicon-heart"></span> by <span class="octicon octicon-logo-github"></span></a>
+            <a href="https://github.com"><span class="octicon octicon-code" /> with <span class="octicon octicon-heart" /> by <span class="octicon octicon-logo-github" /></a>
           </div>
         </div>
       </div>
