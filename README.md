@@ -1,5 +1,10 @@
 # hello-world
 
+## clone code
+```
+git clone xxx.git
+```
+
 ## Project setup
 ```
 yarn install
